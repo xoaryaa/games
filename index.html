@@ -5,18 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Interface</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .game-link {
+            display: inline-block;
+            padding: 15px 25px;
+            margin: 10px;
+            background-color: #4682b4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 20px;
+        }
+
+        .game-link:hover {
+            background-color: #4169e1;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Game Interface</h1>
-    <button id="start-number-guessing">Start Number Guessing Game</button>
-    <button id="start-calculator">Start Calculator Game</button>
-    <button id="start-snake-game">Start Snake Game</button>
-
-    <div id="game-container"></div>
-
-    <script src="scripts.js"></script>
+    <h1>Welcome to the Game Interface</h1>
+    <div class="container">
+        <a href="snake_game.html" class="game-link">Play Snake Game</a>
+        <a href="number_guessing_game.html" class="game-link">Play Number Guessing Game</a>
+        <a href="calculator_game.html" class="game-link">Play Calculator Game</a>
+    </div>
 </body>
 
 </html>
