@@ -32,7 +32,7 @@ The project is divided into two main folders:
 
 ## Setup and Installation
 
-### Python Game Interface
+### Python Game Interface🐍
 
 1. **Clone the Repository:**
    ```bash
